@@ -1,10 +1,10 @@
 name: flutter_dynamic_components
 description: "A new Flutter package project."
 version: 0.0.1
-homepage: "https://github.com/devnoaman/flutter_dynamic_components"
+homepage:
 
 environment:
-  sdk: ">=3.3.0-279.2.beta <4.0.0"
+  sdk: '>=3.3.0-279.2.beta <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
