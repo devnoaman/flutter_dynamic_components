@@ -6,3 +6,4 @@ export 'src/models/models.dart';
 export 'src/models/components_manager_type.dart';
 export 'package:carousel_slider/carousel_options.dart';
 export 'src/components_properties.dart';
+export 'src/category_properties.dart';

@@ -27,14 +27,12 @@ class DynamicSlider extends StatelessWidget {
               child: GestureDetector(
                 onTap: () =>
                     ComponentsManager.of(context)!.onSliderCardClicked.call(i),
-                child: ClipRRect(
-                  borderRadius: componentsProperties!.sliderBorderRadius == null
-                      ? BorderRadius.zero
-                      : BorderRadius.circular(
-                          componentsProperties.sliderBorderRadius as double),
-                  child: MyCachedImage(
-                    image: i.url,
-                  ),
+                child: MyCachedImage(
+                  image: i.url,
+                      borderRadius: componentsProperties!.sliderBorderRadius == null
+                    ? BorderRadius.circular(12)
+                    : BorderRadius.circular(
+                        componentsProperties.sliderBorderRadius as double),
                 ),
               ),
             );
