@@ -58,11 +58,14 @@ class _MainAppState extends State<MainApp> {
             return ComponentsManager(
               properties: properties,
               componentsProperties: ComponentsProperties(
+                categoryProperties: const CategoryProperties(
+                  categoryPadding: EdgeInsets.all(12)
+                ),
                 sliderBorderRadius: 12.0,
                 componentsPadding: const EdgeInsets.all(0),
                 carouselOptions: CarouselOptions(
                   height: 195,
-                  aspectRatio: 1.5 / 3,
+                  aspectRatio: 1 / 2,
                   enlargeCenterPage: true,
                   autoPlay: true,
                 ),
