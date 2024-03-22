@@ -5,9 +5,9 @@ import 'package:flutter_dynamic_components/src/models/models.dart';
 class DynamicText extends StatelessWidget {
   final PropertyBase property;
   const DynamicText({
-    Key? key,
+    super.key,
     required this.property,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

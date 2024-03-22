@@ -4,7 +4,6 @@ import 'package:flutter_dynamic_components/flutter_dynamic_components.dart';
 import 'package:flutter_dynamic_components/src/components/my_cached_image.dart';
 import 'package:flutter_dynamic_components/src/models/category_base/category_base.dart';
 
-import 'package:flutter_dynamic_components/src/models/models.dart';
 
 // ! not yet completed
 class DynamicCategory extends StatelessWidget {
