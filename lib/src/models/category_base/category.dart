@@ -1,21 +1,4 @@
-// import 'package:freezed_annotation/freezed_annotation.dart';
 
-// part 'category.freezed.dart';
-// part 'category.g.dart';
-
-// @freezed
-// class Category with _$Category {
-//   factory Category({
-//     String? title,
-//     String? image,
-//   }) = _Category;
-
-//   factory Category.fromJson(Map<String, dynamic> json) =>
-//       _$CategoryFromJson(json);
-// }
-
-// import 'dart:convert';
-// import 'dart:core';
 part of 'category_base.dart';
 
 class Category {

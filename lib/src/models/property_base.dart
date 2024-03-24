@@ -7,7 +7,6 @@ import 'package:flutter_dynamic_components/src/models/not_implemented.dart';
 abstract class PropertyBase {
   Widget build();
   static fromJson(Map<String, dynamic> pr) {
-    print(pr);
     return pr['property'] == 'text'
         ? TextBase.fromMap(pr)
         : pr['property'] == 'slider'

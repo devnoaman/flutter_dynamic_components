@@ -5,10 +5,15 @@ class MyCachedImage extends StatelessWidget {
   const MyCachedImage({
     super.key,
     required this.image,
-    this.height,  this.borderRadius,
+    this.height, 
+    this.width, 
+    
+    
+     this.borderRadius,
   });
   final String image;
   final double? height;
+  final double? width;
   final BorderRadiusGeometry? borderRadius;
 
   @override
@@ -19,6 +24,7 @@ class MyCachedImage extends StatelessWidget {
       borderRadius: borderRadius??BorderRadius.zero,
       child: CachedNetworkImage(
         height: height,
+        width: width,
         errorWidget: (context, url, error) => const Center(
           child: Icon(Icons.error),
         ),

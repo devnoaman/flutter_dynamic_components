@@ -64,8 +64,9 @@ class _MainAppState extends State<MainApp> {
                 sliderBorderRadius: 12.0,
                 componentsPadding: const EdgeInsets.all(0),
                 carouselOptions: CarouselOptions(
-                  height: 195,
-                  aspectRatio: 1 / 2,
+                  height: 200,
+                  aspectRatio: 1.5/0.8,
+                  viewportFraction: 1,
                   enlargeCenterPage: true,
                   autoPlay: true,
                 ),

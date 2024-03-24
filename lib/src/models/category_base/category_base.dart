@@ -92,8 +92,12 @@ class CategoryBase implements PropertyBase {
       viewShowMore: map['viewShowMore'],
       categories: map['categories'] != null
           ? List<Category>.from(
-              map['categories']?.map((x) => Category.fromMap(map)))
+              map['categories']?.map((x) {
+                var c = Category.fromMap(x);
+                return c;
+              }))
           : null,
+          // 
       borderRadius: map['borderRadius']?.toInt(),
       viewSize: map['viewSize']?.toDouble(),
     );

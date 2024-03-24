@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dynamic_components/flutter_dynamic_components.dart';
 
-import 'package:flutter_dynamic_components/src/models/category_base/category_base.dart';
-import 'package:flutter_dynamic_components/src/models/image.dart';
+
 
 class PropertyWidget extends StatelessWidget {
   /// Creates a widget that delegates its build to a callback.

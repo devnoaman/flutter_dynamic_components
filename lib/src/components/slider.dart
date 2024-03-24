@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dynamic_components/extenstions.dart';
 import 'package:flutter_dynamic_components/src/components/my_cached_image.dart';
 
 import '../../flutter_dynamic_components.dart';
@@ -18,7 +19,7 @@ class DynamicSlider extends StatelessWidget {
     var carouselOptions =
         ComponentsManager.of(context)!.componentsProperties!.carouselOptions;
     return CarouselSlider(
-      options: carouselOptions ?? CarouselOptions(height: 200.0),
+      options: carouselOptions ?? CarouselOptions(height: 1.0),
       items: (property as SliderBase).images.map((i) {
         return Builder(
           builder: (BuildContext context) {
@@ -29,6 +30,7 @@ class DynamicSlider extends StatelessWidget {
                     ComponentsManager.of(context)!.onSliderCardClicked.call(i),
                 child: MyCachedImage(
                   image: i.url,
+                  width: context.width,
                       borderRadius: componentsProperties!.sliderBorderRadius == null
                     ? BorderRadius.circular(12)
                     : BorderRadius.circular(

@@ -28,7 +28,7 @@ class DynamicCategory extends StatelessWidget {
         child: GridView.count(
           physics: const NeverScrollableScrollPhysics(),
           crossAxisCount: 4,
-          childAspectRatio: 1 / 1,
+          childAspectRatio: 1 / 1.3,
           children: [
             ...categoryBase.categories!.map(
               (e) => Column(
@@ -38,16 +38,12 @@ class DynamicCategory extends StatelessWidget {
                     child: MyCachedImage(
                      image: e.image!,
                      borderRadius: BorderRadius.circular(12),
-                    
                     ),
                   ),
-                  Text(e.title ?? 'null'),
+                  Text(e.title ?? '',maxLines: 2,textAlign: TextAlign.center,),
                 ],
               ),
             ),
-            // (categoryBase.viewShowMore ?? false)
-            //     ? FloatingActionButton(onPressed: () {})
-            //     : SizedBox()
           ],
         ),
       ),
