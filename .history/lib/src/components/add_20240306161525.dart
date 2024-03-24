@@ -15,6 +15,7 @@ class DynamicAdd extends StatelessWidget {
   Widget build(BuildContext context) {
     var properties = (base as ImageBase);
     var padding = properties.padding.split(',');
+    print(padding[0]);
     return Padding(
       padding: EdgeInsets.only(
         left: double.tryParse(padding[0]) ?? 0.0,

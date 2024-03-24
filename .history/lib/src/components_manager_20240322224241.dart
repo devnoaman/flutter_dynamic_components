@@ -22,9 +22,6 @@ class ComponentsManager extends InheritedWidget {
 
   @override
   bool updateShouldNotify(covariant ComponentsManager oldWidget) {
-    print('object');
-    print(properties);
-    print(oldWidget.properties != properties);
     // return oldWidget.properties != properties;
     return true;
   }
